@@ -23,6 +23,6 @@ public record UserDTO(
         @Size(min = 3, message = "Last name must be at least 3 characters long")
         String lastName,
         @NotBlank(message = "Role is required")
-        @Pattern(regexp = "USER|ORGANIZER", message = "Role must be either USER or EVENT_MANAGER")
+        @Pattern(regexp = "USER|ORGANIZER", message = "Role must be either USER or ORGANIZER")
         String role) {
 }

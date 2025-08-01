@@ -7,8 +7,8 @@ public class RecordNotFoundException extends RuntimeException {
         super(record + "with id" + id + " not found");
     }
 
-    public RecordNotFoundException(String message) {
-        super(message);
+    public RecordNotFoundException(String type, String notFoundWith) {
+        super(type + " not found with " + notFoundWith);
     }
 
 }
