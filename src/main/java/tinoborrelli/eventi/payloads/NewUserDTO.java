@@ -21,3 +21,4 @@ public record NewUserDTO(
         @Size(min = 3, message = "Last name must be at least 3 characters long")
         String lastName) {
 }
+
